@@ -37,7 +37,7 @@ include("config.php");
 
 <!--	Title
 	=========================================================-->
-<title>Real Estate PHP</title>
+<title> Mono Line</title>
 </head>
 <body>
 
@@ -121,28 +121,28 @@ include("config.php");
                     <div class="row">
                         <div class="col-lg-3 col-md-6">
                             <div class="p-4 text-center hover-bg-white hover-shadow rounded mb-4 transation-3s"> 
-								<i class="flaticon-rent text-light  flat-medium" aria-hidden="true"></i>
+								<i class="flaticon-rent text-dark flat-medium" aria-hidden="true"></i>
                                 <h5 class="text-secondary hover-text-light  py-3 m-0"><a href="#">Selling Service</a></h5>
                                 <p>This is a dummy text for filling out spaces. Just some random words...</p>
                             </div>
                         </div>
                         <div class="col-lg-3 col-md-6">
                             <div class="p-4 text-center hover-bg-white hover-shadow rounded mb-4 transation-3s"> 
-								<i class="flaticon-for-rent text-light  flat-medium" aria-hidden="true"></i>
+								<i class="flaticon-for-rent text-dark  flat-medium" aria-hidden="true"></i>
                                 <h5 class="text-secondary hover-text-light  py-3 m-0"><a href="#">Rental Service</a></h5>
                                 <p>This is a dummy text for filling out spaces. Just some random words...</p>
                             </div>
                         </div>
                         <div class="col-lg-3 col-md-6">
                             <div class="p-4 text-center hover-bg-white hover-shadow rounded mb-4 transation-3s"> 
-								<i class="flaticon-list text-light  flat-medium" aria-hidden="true"></i>
+								<i class="flaticon-list text-dark  flat-medium" aria-hidden="true"></i>
                                 <h5 class="text-secondary hover-text-light  py-3 m-0"><a href="#">Property Listing</a></h5>
                                 <p>This is a dummy text for filling out spaces. Just some random words...</p>
                             </div>
                         </div>
                         <div class="col-lg-3 col-md-6">
                             <div class="p-4 text-center hover-bg-white hover-shadow rounded mb-4 transation-3s"> 
-								<i class="flaticon-diagram text-light  flat-medium" aria-hidden="true"></i>
+								<i class="flaticon-diagram text-dark  flat-medium" aria-hidden="true"></i>
                                 <h5 class="text-secondary hover-text-light  py-3 m-0"><a href="#">Legal Investment</a></h5>
                                 <p>This is a dummy text for filling out spaces. Just some random words...</p>
                             </div>
@@ -221,7 +221,7 @@ include("config.php");
 		<!--	Recent Properties  -->
         
         <!--	Why Choose Us -->
-        <div class="full-row living bg-one overlay-secondary-half" style="background-image: url('images/01.jpg'); background-size: cover; background-position: center center; background-repeat: no-repeat;">
+        <div class="full-row living bg-one overlay-secondary-half" style="background-image: url('https://i.ibb.co/zhv06HW/pexels-skitterphoto-584399.jpg'); background-size: cover; background-position: center center; background-repeat: no-repeat;">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12 col-lg-6">
@@ -298,7 +298,7 @@ include("config.php");
         
         <!--	Achievement
         ============================================================-->
-        <div class="full-row overlay-secondary" style="background-image: url('images/breadcromb.jpg'); background-size: cover; background-position: center center; background-repeat: no-repeat;">
+        <div class="full-row overlay-secondary" style="background-image: url('https://i.ibb.co/5FgYVbt/pexels-curtis-adams-5178033.jpg'); background-size: cover; background-position: center center; background-repeat: no-repeat;">
             <div class="container">
                 <div class="fact-counter">
                     <div class="row">

@@ -4,8 +4,8 @@
                     <div class="row">
                         <div class="col-md-8">
                             <ul class="top-contact list-text-white  d-table">
-                                <li><a href="#"><i class="fas fa-phone-alt text-light  mr-1"></i>+880 1615-723681</a></li>
-                                <li><a href="#"><i class="fas fa-envelope text-light  mr-1"></i>sumiarahman01739@gmail.com</a></li>
+                                <li><a href="#"><i class="fas fa-phone-alt text-light  mr-1"></i>+880 1234-785268</a></li>
+                                <li><a href="#"><i class="fas fa-envelope text-light  mr-1"></i>helpline@monoline.com</a></li>
                             </ul>
                         </div>
                         <div class="col-md-4">

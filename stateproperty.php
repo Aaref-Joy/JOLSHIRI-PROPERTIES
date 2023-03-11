@@ -16,7 +16,7 @@ include("config.php");
 
 <!-- Meta Tags -->
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="description" content="Real Estate PHP">
+<meta name="description" content=" Mono Line">
 <meta name="keywords" content="">
 <meta name="author" content="Unicoder">
 <link rel="shortcut icon" href="images/favicon.ico">
@@ -40,7 +40,7 @@ include("config.php");
 
 <!--	Title
 	=========================================================-->
-<title>Real Estate PHP</title>
+<title> Mono Line</title>
 </head>
 <body>
 

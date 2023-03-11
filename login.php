@@ -62,12 +62,12 @@ if(isset($_REQUEST['login']))
  
 <!--	Title
 	=========================================================-->
-<title>Real Estate PHP</title>
+<title> Mono Line</title>
 </head>
 <body>
 
 <!--	Page Loader
-=============================================================
+=============================================================--> 
 <div class="page-loader position-fixed z-index-9999 w-100 bg-white vh-100">
 	<div class="d-flex justify-content-center y-middle position-relative">
 	  <div class="spinner-border" role="status">
@@ -75,7 +75,7 @@ if(isset($_REQUEST['login']))
 	  </div>
 	</div>
 </div>
---> 
+
 
 
 <div id="page-wrapper">

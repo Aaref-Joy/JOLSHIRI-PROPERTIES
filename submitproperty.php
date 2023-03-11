@@ -117,7 +117,7 @@ if(isset($_POST['add']))
  
 <!--	Title
 	=========================================================-->
-<title>Real Estate PHP</title>
+<title> Mono Line</title>
 </head>
 <body>
 

@@ -38,12 +38,12 @@ include("config.php");
 
 <!--	Title
 	=========================================================-->
-<title>Real Estate PHP</title>
+<title> Mono Line</title>
 </head>
 <body>
 
-<!--	Page Loader
-=============================================================
+<!-- 	Page Loader
+============================================================= -->
 <div class="page-loader position-fixed z-index-9999 w-100 bg-white vh-100">
 	<div class="d-flex justify-content-center y-middle position-relative">
 	  <div class="spinner-border" role="status">
@@ -51,7 +51,7 @@ include("config.php");
 	  </div>
 	</div>
 </div>
---> 
+ 
 
 
 <div id="page-wrapper">
@@ -62,7 +62,7 @@ include("config.php");
         <!--	Header end  -->
 
         <!--	Banner   --->
-        <!-- <div class="banner-full-row page-banner" style="background-image:url('images/breadcromb.jpg');">
+        <div class="banner-full-row page-banner" style="background-image:url('images/breadcromb.jpg');">
             <div class="container">
                 <div class="row">
                     <div class="col-md-6">
@@ -78,7 +78,7 @@ include("config.php");
                     </div>
                 </div>
             </div>
-        </div> -->
+        </div>
          <!--	Banner   --->
 
 

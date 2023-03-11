@@ -7,7 +7,7 @@
                                 <div class="col-md-12 col-lg-4">
                                     <div class="footer-widget mb-4">
                                         <div class="footer-logo mb-4"> <a href="#"><img class="logo-bottom" src="https://i.ibb.co/zFq4WHZ/Black-Monoline-Real-Estate-Logo-3-1.png" alt="image"></a> </div>
-                                        <p class="pb-20 text-white">Risus commodo congue augue phasellus morbi hymenaeos ante tincidunt eu orci dictum bibendum lacus platea primis mi lacinia felis gravida natoque bibendum cubilia montes tristique et arcu blandit risus. Lobortis dignissim nam.</p>
+                                        <p class="pb-20 text-white">Real estate refers to property consisting of land and buildings or other structures on it, along with natural resources such as water, crops, and minerals. Real estate is a significant sector of the economy, involving the buying, selling, leasing, and management of properties.</p>
 										
                                         </div>
                                 </div>
@@ -40,9 +40,9 @@
                                                 <h4 class="widget-title text-white double-down-line-left position-relative">Contact Us</h4>
                                                 <ul class="text-white">
                                                     <li class="hover-text-primary"><i class="fas fa-map-marker-alt text-white mr-2 font-13 mt-1"></i>Jashore Khulna Bangaldesh</li>
-                                                    <li class="hover-text-primary"> <i class="fas fa-phone-alt text-white mr-2 font-13 mt-1"></i>+880 1615-723681</li>
-													<li class="hover-text-primary"> <i class="fas fa-phone-alt text-white mr-2 font-13 mt-1"></i>+880 1235-758629</li>
-                                                    <li class="hover-text-primary"><i class="fas fa-envelope text-white mr-2 font-13 mt-1"></i>sumiarahman01739@gmail.com</li>
+                                                    <li class="hover-text-primary"> <i class="fas fa-phone-alt text-white mr-2 font-13 mt-1"></i>+880 1234-785268</li>
+													<li class="hover-text-primary"> <i class="fas fa-phone-alt text-white mr-2 font-13 mt-1"></i>+880 1234-785268</li>
+                                                    <li class="hover-text-primary"><i class="fas fa-envelope text-white mr-2 font-13 mt-1"></i>helpline@monoline.com</li>
                                                 </ul>
                                             </div>
                                             <div class="footer-widget media-widget mt-4 text-white hover-text-primary"> <a href="#"><i class="fab fa-facebook-f"></i></a> <a href="#"><i class="fab fa-twitter"></i></a> <a href="#"><i class="fab fa-google-plus-g"></i></a> <a href="#"><i class="fab fa-linkedin-in"></i></a> <a href="#"><i class="fas fa-rss"></i></a> </div>

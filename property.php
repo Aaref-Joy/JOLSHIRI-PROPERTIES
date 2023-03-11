@@ -15,7 +15,7 @@ include("config.php");
 
 <!-- Meta Tags -->
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="description" content="Real Estate PHP">
+<meta name="description" content=" Mono Line">
 <meta name="keywords" content="">
 <meta name="author" content="Unicoder">
 <link rel="shortcut icon" href="images/favicon.ico">
@@ -39,12 +39,12 @@ include("config.php");
 
 <!--	Title
 	=========================================================-->
-<title>Real Estate PHP</title>
+<title> Mono Line</title>
 </head>
 <body>
 
 <!--	Page Loader
-=============================================================
+=============================================================--> 
 <div class="page-loader position-fixed z-index-9999 w-100 bg-white vh-100">
 	<div class="d-flex justify-content-center y-middle position-relative">
 	  <div class="spinner-border" role="status">
@@ -52,7 +52,7 @@ include("config.php");
 	  </div>
 	</div>
 </div>
---> 
+
 
 
 <div id="page-wrapper">
@@ -62,7 +62,7 @@ include("config.php");
         <!--	Header end  -->
          
         <!--	Banner   --->
-        <!-- <div class="banner-full-row page-banner" style="background-image:url('images/breadcromb.jpg');">
+        <div class="banner-full-row page-banner" style="background-image:url('images/breadcromb.jpg');">
             <div class="container">
                 <div class="row">
                     <div class="col-md-6">
@@ -71,14 +71,14 @@ include("config.php");
                     <div class="col-md-6">
                         <nav aria-label="breadcrumb" class="float-left float-md-right">
                             <ol class="breadcrumb bg-transparent m-0 p-0">
-                                <li class="breadcrumb-item text-white"><a href="#">Home</a></li>
+                                <li class="breadcrumb-item text-white"><a href="index.php">Home</a></li>
                                 <li class="breadcrumb-item active">Property Grid</li>
                             </ol>
                         </nav>
                     </div>
                 </div>
             </div>
-        </div> -->
+        </div>
          <!--	Banner   --->
         
         <!--	Property Grid
