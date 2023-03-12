@@ -5974,13 +5974,13 @@ button.bg-secondary:hover {
   background-color: #545b62 !important;
 }
 .bg-success {
-  background-color: #181A20 !important;
-}
+  background-color: #bd9a68 !important;
+}#bd9a68
 a.bg-success:focus,
 a.bg-success:hover,
 button.bg-success:focus,
 button.bg-success:hover {
-  background-color: #1e7e34 !important;
+  background-color: #d4ad3a !important;
 }
 .bg-info {
   background-color: #17a2b8 !important;
@@ -9044,7 +9044,7 @@ button.bg-dark:hover {
   color: #fff !important;
 }
 .text-primary {
-  color: #007bff !important;
+  color: #bd9a68 !important;
 }
 a.text-primary:focus,
 a.text-primary:hover {

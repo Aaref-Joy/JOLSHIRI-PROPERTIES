@@ -41,7 +41,7 @@
 										
                                         <li class="nav-item"> <a class="nav-link" href="property.php">Properties</a> </li>
                                         
-                                        <li class="nav-item"> <a class="nav-link" href="agent.php">Agent</a> </li>
+                                        <!-- <li class="nav-item"> <a class="nav-link" href="agent.php">Agent</a> </li> -->
 
 										
 										<?php  if(isset($_SESSION['uemail']))

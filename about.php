@@ -42,13 +42,13 @@ include("config.php");
 <body>
 
 <!--	Page Loader -->
-<!-- <div class="page-loader position-fixed z-index-9999 w-100 bg-white vh-100">
+<div class="page-loader position-fixed z-index-9999 w-100 bg-white vh-100">
 	<div class="d-flex justify-content-center y-middle position-relative">
 	  <div class="spinner-border" role="status">
 		<span class="sr-only">Loading...</span>
 	  </div>
 	</div>
-</div> -->
+</div>
  
 <div id="page-wrapper">
     <div class="row"> 
@@ -75,7 +75,10 @@ include("config.php");
                 <div class="row about-company">
                     <div class="col-md-12 col-lg-7">
                         <div class="about-content">
-                            <?php echo $row['2'];?>
+                            <p>WHO WE ARE</p>
+                            <h1 class='text-dark'>30 YEARS OF <br> LEADERSHIP IN REAL <br> ESTATE SECTOR</h1>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi tempore vero suscipit nesciunt at maxime, nisi dolore reprehenderit numquam neque maiores sapiente necessitatibus provident veniam tempora blanditiis. Magnam officia consequatur voluptate modi tempora? Nobis excepturi ullam quidem consectetur assumenda consequatur magnam eius iusto explicabo omnis vel veniam sit, nisi nam! Iusto velit dolore id, ad in repellat pariatur soluta nemo enim! Debitis, molestiae, quisquam ab quas saepe neque praesentium corporis eum voluptatibus hic voluptate earum! Similique tenetur exercitationem quibusdam earum voluptatem quidem tempora quaerat vitae aliquam cumque cum, consequatur ad ipsa est reprehenderit architecto aliquid? Magni ipsam molestiae officiis similique!</p>
+                            <!-- <?php echo $row['2'];?> -->
                         </div>
                     </div>
                     <div class="col-md-12 col-lg-5 mt-5">
