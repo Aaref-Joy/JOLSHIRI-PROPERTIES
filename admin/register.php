@@ -12,17 +12,17 @@ if(isset($_REQUEST['insert']))
 	
 	if(!empty($name) && !empty($email) && !empty($pass)  && !empty($dob) && !empty($phone))
 	{
-		$sql="insert into admin (auser,aemail,apass,adob,aphone) values('$name','$email','$pass','$dob','$phone')";
+		$sql="insert into ventura (auser,aemail,apass,adob,aphone) values('$name','$email','$pass','$dob','$phone')";
 		$result=mysqli_query($con,$sql);
 		if($result)
 			{
-				$msg='Admin Register Successfully';
+				$msg='ventura Register Successfully';
 				
 						
 			}
 			else
 			{
-				$error='* Not Register Admin Try Again';
+				$error='* Not Register ventura Try Again';
 			}
 	}
 	else{
@@ -38,7 +38,7 @@ if(isset($_REQUEST['insert']))
 <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
-        <title>Ventura - Register</title>
+        <title>ventura - Register</title>
 		
 		<!-- Favicon -->
         <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png">

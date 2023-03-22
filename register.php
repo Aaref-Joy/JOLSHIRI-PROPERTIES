@@ -30,7 +30,7 @@ if(isset($_REQUEST['reg']))
 			
 			$sql="INSERT INTO user (uname,uemail,uphone,upass,utype,uimage) VALUES ('$name','$email','$phone','$pass','$utype','$uimage')";
 			$result=mysqli_query($con, $sql);
-			move_uploaded_file($temp_name1,"admin/user/$uimage");
+			move_uploaded_file($temp_name1,"ventura/user/$uimage");
 			   if($result){
 				   $msg = "<p class='alert alert-success'>Register Successfully</p> ";
 			   }
@@ -82,15 +82,15 @@ if(isset($_REQUEST['reg']))
 <body>
 
 <!--	Page Loader
-=============================================================
+=============================================================--> 
 <div class="page-loader position-fixed z-index-9999 w-100 bg-white vh-100">
 	<div class="d-flex justify-content-center y-middle position-relative">
-	  <div class="spinner-border" role="status">
-		<span class="sr-only">Loading...</span>
-	  </div>
+	<div class="spinner-grow" role="status">
+  <span class="visually-hidden"></span>
+</div>
 	</div>
 </div>
---> 
+
 
 
 <div id="page-wrapper">
@@ -127,8 +127,7 @@ if(isset($_REQUEST['reg']))
                 	<div class="loginbox">
                         <div class="login-right">
 							<div class="login-right-wrap">
-								<h1>Register</h1>
-								<p class="account-subtitle">Access to our dashboard</p>
+								<h1>Sign Up</h1>
 								<?php echo $error; ?><?php echo $msg; ?>
 								<!-- Form -->
 								<form method="post" enctype="multipart/form-data">
@@ -166,7 +165,7 @@ if(isset($_REQUEST['reg']))
 										<input class="form-control" name="uimage" id="formFile" type="file">
 									</div>
 									
-									<button class="btn btn-success" name="reg" value="Register" type="submit">Register</button>
+									<button class="btn btn-success" name="reg" value="Register" type="submit">Sign Up</button>
 									
 								</form>
 								

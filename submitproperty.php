@@ -59,15 +59,15 @@ if(isset($_POST['add']))
 	$temp_name6 =$_FILES['fimage1']['tmp_name'];
 	$temp_name7 =$_FILES['fimage2']['tmp_name'];
 	
-	move_uploaded_file($temp_name,"admin/property/$aimage");
-	move_uploaded_file($temp_name1,"admin/property/$aimage1");
-	move_uploaded_file($temp_name2,"admin/property/$aimage2");
-	move_uploaded_file($temp_name3,"admin/property/$aimage3");
-	move_uploaded_file($temp_name4,"admin/property/$aimage4");
+	move_uploaded_file($temp_name,"ventura/property/$aimage");
+	move_uploaded_file($temp_name1,"ventura/property/$aimage1");
+	move_uploaded_file($temp_name2,"ventura/property/$aimage2");
+	move_uploaded_file($temp_name3,"ventura/property/$aimage3");
+	move_uploaded_file($temp_name4,"ventura/property/$aimage4");
 	
-	move_uploaded_file($temp_name5,"admin/property/$fimage");
-	move_uploaded_file($temp_name6,"admin/property/$fimage1");
-	move_uploaded_file($temp_name7,"admin/property/$fimage2");
+	move_uploaded_file($temp_name5,"ventura/property/$fimage");
+	move_uploaded_file($temp_name6,"ventura/property/$fimage1");
+	move_uploaded_file($temp_name7,"ventura/property/$fimage2");
 	
 	$sql="insert into property (title,pcontent,type,bhk,stype,bedroom,bathroom,balcony,kitchen,hall,floor,size,price,location,city,state,feature,pimage,pimage1,pimage2,pimage3,pimage4,uid,status,mapimage,topmapimage,groundmapimage,totalfloor, isFeatured)
 	values('$title','$content','$ptype','$bhk','$stype','$bed','$bath','$balc','$kitc','$hall','$floor','$asize','$price',
@@ -140,7 +140,7 @@ if(isset($_POST['add']))
         <!--	Header end  -->
         
         <!--	Banner   --->
-        <!-- <div class="banner-full-row page-banner" style="background-image:url('images/breadcromb.jpg');">
+        <div class="banner-full-row page-banner" style="background-image:url('images/breadcromb.jpg');">
             <div class="container">
                 <div class="row">
                     <div class="col-md-6">
@@ -156,7 +156,7 @@ if(isset($_POST['add']))
                     </div>
                 </div>
             </div>
-        </div> -->
+        </div>
          <!--	Banner   --->
 		 
 		 
@@ -346,7 +346,7 @@ if(isset($_POST['add']))
 										<div class="form-group row">
 											<label class="col-lg-2 col-form-label">Feature</label>
 											<div class="col-lg-9">
-											<p class="alert alert-danger">* Important Please Do Not Remove Below Content Only Change <b>Yes</b> Or <b>No</b> or Details and Do Not Add More Details</p>
+											<p class="alert alert-danger" role="alert" >⚠ Important Don't Remove the down Content add Change only <b>Yes</b> Or <b>No</b> or Details and Don't Add More Details</p>
 											
 											<textarea class="tinymce form-control" name="feature" rows="10" cols="30">
 												<!---feature area start--->
@@ -394,6 +394,7 @@ if(isset($_POST['add']))
 													<label class="col-lg-3 col-form-label">Image 2</label>
 													<div class="col-lg-9">
 														<input class="form-control" name="aimage2" type="file" required="">
+														
 													</div>
 												</div>
 												<div class="form-group row">

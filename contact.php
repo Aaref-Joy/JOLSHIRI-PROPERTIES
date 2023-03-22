@@ -62,15 +62,15 @@ if(isset($_POST['send']))
 <body>
 
 <!--	Page Loader
-=============================================================
+=============================================================--> 
 <div class="page-loader position-fixed z-index-9999 w-100 bg-white vh-100">
 	<div class="d-flex justify-content-center y-middle position-relative">
-	  <div class="spinner-border" role="status">
-		<span class="sr-only">Loading...</span>
-	  </div>
+	<div class="spinner-grow" role="status">
+  <span class="visually-hidden"></span>
+</div>
 	</div>
 </div>
---> 
+
  
 <div id="page-wrapper">
     <div class="row"> 
@@ -79,7 +79,7 @@ if(isset($_POST['send']))
         <!--	Header end  -->
         
         <!--	Banner -->
-        <!-- <div class="banner-full-row page-banner" style="background-image:url('images/breadcromb.jpg');">
+        <div class="banner-full-row page-banner" style="background-image:url('images/breadcromb.jpg');">
             <div class="container">
                 <div class="row">
                     <div class="col-md-6">
@@ -88,14 +88,14 @@ if(isset($_POST['send']))
                     <div class="col-md-6">
                         <nav aria-label="breadcrumb" class="float-left float-md-right">
                             <ol class="breadcrumb bg-transparent m-0 p-0">
-                                <li class="breadcrumb-item text-white"><a href="#">Home</a></li>
+                                <li class="breadcrumb-item text-white"><a href="index.php">Home</a></li>
                                 <li class="breadcrumb-item active">Contact</li>
                             </ol>
                         </nav>
                     </div>
                 </div>
             </div>
-        </div> -->
+        </div>
         <!--	Banner -->
 		 
         <!--	Contact Information -->
@@ -174,7 +174,7 @@ if(isset($_POST['send']))
         <!--	Contact Inforamtion -->
         
         <!--	Map -->
-		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5644.408542716626!2d-117.1523848363907!3d32.73426737275872!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80d95495497f80c9%3A0x5df0f4372635e247!2sSan%20Diego%20Zoo!5e0!3m2!1sen!2snp!4v1658568764228!5m2!1sen!2snp" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3746841.142654949!2d88.10013445319406!3d23.49562509219387!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30adaaed80e18ba7%3A0xf2d28e0c4e1fc6b!2sBangladesh!5e0!3m2!1sen!2sbd!4v1678648123852!5m2!1sen!2sbd" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 		<!--	Map -->
         
         <!--	Footer   start-->

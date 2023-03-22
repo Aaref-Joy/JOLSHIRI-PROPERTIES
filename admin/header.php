@@ -1,7 +1,6 @@
 <?php
-session_start();
+// session_start();
 require("config.php");
-////code
  
 if(!isset($_SESSION['auser']))
 {
@@ -22,15 +21,17 @@ if(!isset($_SESSION['auser']))
 				<!-- /Logo -->
 				
 				<a href="javascript:void(0);" id="toggle_btn">
-					<i class="fe fe-text-align-left"></i>
+				<i class="fa fa-bars"></i>
+				
 				</a>
+				
 				
 
 				
 				<!-- Mobile Menu Toggle -->
-				<a class="mobile_btn" id="mobile_btn">
+				<!-- <a href="javascript:void(0);" class="mobile_btn" id="mobile_btn">
 					<i class="fa fa-bars"></i>
-				</a>
+				</a> -->
 				<!-- /Mobile Menu Toggle -->
 				
 				<!-- Header Right Menu -->
@@ -51,7 +52,7 @@ if(!isset($_SESSION['auser']))
 								</div>
 								<div class="user-text">
 									<h6><?php echo $_SESSION['auser'];?></h6>
-									<p class="text-muted mb-0">Administrator</p>
+									<p class="text-muted mb-0">venturaistrator</p>
 								</div>
 							</div>
 							<a class="dropdown-item" href="profile.php">Profile</a>
@@ -75,11 +76,14 @@ if(!isset($_SESSION['auser']))
                 <div class="sidebar-inner slimscroll">
 					<div id="sidebar-menu" class="sidebar-menu">
 						<ul>
-							<li class="menu-title"> 
-								<span>Main</span>
+							<li class="menu-title justify-content-between align-items-center"> 
+								<span>Active</span>
+								<i class="fa-solid fa-circle fa-fade fa-2xs" style="color: #63f425; width: 5px;"></i>
 							</li>
 							<li> 
-								<a href="dashboard.php"><i class="fe fe-home"></i> <span>Dashboard</span></a>
+								<a href="dashboard.php"><i class="fe fe-home"></i> <span>Dashboard </span> <span></span></a>
+								
+								
 							</li>
 							
 							<!-- <li class="menu-title"> 
@@ -101,7 +105,7 @@ if(!isset($_SESSION['auser']))
 							<li class="submenu">
 								<a href="#"><i class="fe fe-user"></i> <span> All Users </span> <span class="menu-arrow"></span></a>
 								<ul style="display: none;">
-									<li><a href="adminlist.php"> Admin </a></li>
+									<!-- <li><a href="venturalist.php"> ventura </a></li> -->
 									<li><a href="userlist.php"> Users </a></li>
 									<li><a href="useragent.php"> Agent </a></li>
 									<li><a href="userbuilder.php"> Builder </a></li>
@@ -126,7 +130,7 @@ if(!isset($_SESSION['auser']))
 							<li class="submenu">
 								<a href="#"><i class="fe fe-map"></i> <span> Property</span> <span class="menu-arrow"></span></a>
 								<ul style="display: none;">
-									<li><a href="propertyadd.php"> Add Property</a></li>
+									<li><a  href="propertyadd.php"> Add Property</a></li>
 									<li><a href="propertyview.php"> View Property </a></li>
 									
 								</ul>
@@ -144,7 +148,7 @@ if(!isset($_SESSION['auser']))
 									<li><a href="feedbackview.php"> Feedback </a></li>
 								</ul>
 							</li>
-							<li class="menu-title"> 
+							<!-- <li class="menu-title"> 
 								<span>About</span>
 							</li>
 							<li class="submenu">
@@ -153,7 +157,7 @@ if(!isset($_SESSION['auser']))
 									<li><a href="aboutadd.php"> Add About Content </a></li>
 									<li><a href="aboutview.php"> View About </a></li>
 								</ul>
-							</li>
+							</li> -->
 							
 						</ul>
 					</div>

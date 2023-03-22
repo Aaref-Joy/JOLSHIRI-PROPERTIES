@@ -46,15 +46,15 @@ if(!isset($_SESSION['uemail']))
 <body>
 
 <!--	Page Loader
-=============================================================
+=============================================================--> 
 <div class="page-loader position-fixed z-index-9999 w-100 bg-white vh-100">
 	<div class="d-flex justify-content-center y-middle position-relative">
-	  <div class="spinner-border" role="status">
-		<span class="sr-only">Loading...</span>
-	  </div>
+	  <div class="spinner-grow" role="status">
+  <span class="visually-hidden"></span>
+</div>
 	</div>
 </div>
---> 
+
 
 
 <div id="page-wrapper">
@@ -118,7 +118,7 @@ if(!isset($_SESSION['uemail']))
 							?>
                             <tr>
                                 <td>
-									<img src="admin/property/<?php echo $row['18'];?>" alt="pimage">
+									<img src="ventura/property/<?php echo $row['18'];?>" alt="pimage">
                                     <div class="property-info d-table">
                                         <h5 class="text-secondary text-capitalize"><a href="propertydetail.php?pid=<?php echo $row['0'];?>"><?php echo $row['1'];?></a></h5>
                                         <span class="font-14 text-capitalize"><i class="fas fa-map-marker-alt text-success font-13"></i>&nbsp; <?php echo $row['14'];?></span>

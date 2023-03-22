@@ -62,7 +62,7 @@
                                     </ul>
                                     
 									
-									<a class="btn btn-success d-none d-xl-block" style="border-radius:30px;" href="submitproperty.php">Submit Peoperty</a> 
+									<a class="btn btn-success d-none d-xl-block" style="border-radius:5px;" href="submitproperty.php">Add Property</a> 
                                 </div>
                             </nav>
                         </div>

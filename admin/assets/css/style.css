@@ -1,6 +1,6 @@
 /*
 Author       : Dreamguys
-Template Name: Ventura - Bootstrap Admin Template
+Template Name: ventura - Bootstrap ventura Template
 Version      : 1.0
 */
 
@@ -1889,10 +1889,10 @@ html.menu-opened body {
 .page-wrapper > .content {
   padding: 1.875rem 1.875rem 0;
 }
-.page-header {
+.page-header mt-5 {
   margin-bottom: 1.875rem;
 }
-.page-header .breadcrumb {
+.page-header mt-5 .breadcrumb {
   background-color: transparent;
   color: #6c757d;
   font-size: 1rem;
@@ -1900,7 +1900,7 @@ html.menu-opened body {
   margin-bottom: 0;
   padding: 0;
 }
-.page-header .breadcrumb a {
+.page-header mt-5 .breadcrumb a {
   color: #333;
 }
 .page-title {
@@ -4167,7 +4167,7 @@ table.table-inbox tbody tr.checked {
   .card-chart .card-body {
     padding: 5px;
   }
-  .page-header {
+  .page-header mt-5 {
     margin-bottom: 0.9375rem;
   }
   .account-wrapper {
@@ -4242,7 +4242,7 @@ table.table-inbox tbody tr.checked {
     .user-last-chat {
     max-width: 160px;
   }
-  .page-header .breadcrumb {
+  .page-header mt-5 .breadcrumb {
     display: none;
   }
 }

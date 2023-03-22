@@ -2,8 +2,7 @@
 ini_set('session.cache_limiter','public');
 session_cache_limiter(false);
 session_start();
-include("config.php");
-								
+include("config.php");							
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -42,13 +41,13 @@ include("config.php");
 <body>
 
 <!--	Page Loader  -->
-<!--<div class="page-loader position-fixed z-index-9999 w-100 bg-white vh-100">
+<div class="page-loader position-fixed z-index-9999 w-100 bg-white vh-100">
 	<div class="d-flex justify-content-center y-middle position-relative">
-	  <div class="spinner-border" role="status">
-		<span class="sr-only">Loading...</span>
-	  </div>
+    <div class="spinner-grow" role="status">
+  <span class="visually-hidden"></span>
+</div>
 	</div>
-</div>  -->
+</div> 
 <!--	Page Loader  -->
 
 <div id="page-wrapper">
@@ -180,7 +179,7 @@ include("config.php");
 								
                                     <div class="col-md-6 col-lg-4"> 
                                         <div class="featured-thumb hover-zoomer mb-4">
-                                            <div class="overlay-black overflow-hidden position-relative"> <img src="https://i.ibb.co/g7b6trg/p14-q38zewj2rpvxqdqe0b219wl2an4mkjelki0g59877k.jpg<?php echo $row['18'];?>" alt="pimage">
+                                            <div class="overlay-black overflow-hidden position-relative"> <img src="ventura/property/<?php echo $row['18'];?>" alt="pimage">
                                                 <div class="featured bg-success text-white">New</div>
                                                 <div class="sale bg-success text-white text-capitalize">For <?php echo $row['5'];?></div>
                                                 <div class="price text-light"><b>$<?php echo $row['13'];?> </b><span class="text-white"><?php echo $row['12'];?> Sqft</span></div>
@@ -298,7 +297,7 @@ include("config.php");
         
         <!--	Achievement
         ============================================================-->
-        <div class="full-row overlay-secondary" style="background-image: url('https://i.ibb.co/5FgYVbt/pexels-curtis-adams-5178033.jpg'); background-size: cover; background-position: center center; background-repeat: no-repeat;">
+        <!-- <div class="full-row overlay-secondary" style="background-image: url('https://i.ibb.co/5FgYVbt/pexels-curtis-adams-5178033.jpg'); background-size: cover; background-position: center center; background-repeat: no-repeat;">
             <div class="container">
                 <div class="fact-counter">
                     <div class="row">
@@ -362,7 +361,7 @@ include("config.php");
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
         
         <!--	Popular Place -->
         <div class="full-row bg-gray">
@@ -374,10 +373,11 @@ include("config.php");
                 <div class="col-lg-12">
                     <div class="row">
                         <div class="col-md-6 col-lg-3 pb-1">
-                            <div class="overflow-hidden position-relative overlay-secondary hover-zoomer mx-n13 z-index-9"> <img src="images/thumbnail4/1.jpg" alt="">
+                            <div class="overflow-hidden position-relative overlay-secondary hover-zoomer mx-n13 z-index-9"> 
+                                <img src="images/thumbnail4/1.jpg" alt="">
                                 <div class="text-white xy-center z-index-9 position-absolute text-center w-100">
 									<?php
-										$query=mysqli_query($con,"SELECT count(state), property.* FROM property where city='Olisphis'");
+										$query=mysqli_query($con,"SELECT count(state), property.* FROM property where city='Jashore'");
 											while($row=mysqli_fetch_array($query))
 												{
 										?>
@@ -392,7 +392,7 @@ include("config.php");
                             <div class="overflow-hidden position-relative overlay-secondary hover-zoomer mx-n13 z-index-9"> <img src="images/thumbnail4/2.jpg" alt="">
                                 <div class="text-white xy-center z-index-9 position-absolute text-center w-100">
 									<?php
-										$query=mysqli_query($con,"SELECT count(state), property.* FROM property where city='Awrerton'");
+										$query=mysqli_query($con,"SELECT count(state), property.* FROM property where city='Seattle'");
 											while($row=mysqli_fetch_array($query))
 												{
 										?>

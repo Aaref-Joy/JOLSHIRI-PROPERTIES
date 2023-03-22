@@ -70,9 +70,9 @@ if(isset($_REQUEST['login']))
 =============================================================--> 
 <div class="page-loader position-fixed z-index-9999 w-100 bg-white vh-100">
 	<div class="d-flex justify-content-center y-middle position-relative">
-	  <div class="spinner-border" role="status">
-		<span class="sr-only">Loading...</span>
-	  </div>
+	<div class="spinner-grow" role="status">
+  <span class="visually-hidden"></span>
+</div>
 	</div>
 </div>
 
@@ -113,7 +113,7 @@ if(isset($_REQUEST['login']))
                         <div class="login-right">
 							<div class="login-right-wrap">
 								<h1>Login</h1>
-								<p class="account-subtitle">Access to our dashboard</p>
+								<p class="account-subtitle">Please Login Here</p>
 								<?php echo $error; ?><?php echo $msg; ?>
 								<!-- Form -->
 								<form method="post">
@@ -143,7 +143,7 @@ if(isset($_REQUEST['login']))
 								</div> -->
 								<!-- /Social Login -->
 								
-								<div class="text-center dont-have">Don't have an account? <a href="register.php">Register</a></div>
+								<div class="text-center dont-have">Don't have an account? <a href="register.php">Sign up</a></div>
 								
 							</div>
                         </div>

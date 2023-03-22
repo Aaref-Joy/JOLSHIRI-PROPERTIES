@@ -14,7 +14,7 @@ if(!isset($_SESSION['auser']))
 <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
-        <title>LM Homes | Admin</title>
+        <title>LM Homes | ventura</title>
 		
 		<!-- Favicon -->
         <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png">
@@ -56,7 +56,7 @@ if(!isset($_SESSION['auser']))
                 <div class="content container-fluid">
 
 					<!-- Page Header -->
-					<div class="page-header">
+					<div class="page-header mt-5">
 						<div class="row">
 							<div class="col">
 								<h3 class="page-title">User</h3>

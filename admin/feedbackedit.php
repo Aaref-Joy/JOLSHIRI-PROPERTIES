@@ -75,7 +75,7 @@ if(isset($_POST['update']))
 				<div class="content container-fluid">
 
 					<!-- Page Header -->
-					<div class="page-header">
+					<div class="page-header mt-5">
 						<div class="row">
 							<div class="col">
 								<h3 class="page-title">Feedback</h3>

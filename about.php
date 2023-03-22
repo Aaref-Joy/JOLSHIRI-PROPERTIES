@@ -44,9 +44,9 @@ include("config.php");
 <!--	Page Loader -->
 <div class="page-loader position-fixed z-index-9999 w-100 bg-white vh-100">
 	<div class="d-flex justify-content-center y-middle position-relative">
-	  <div class="spinner-border" role="status">
-		<span class="sr-only">Loading...</span>
-	  </div>
+    <div class="spinner-grow" role="status">
+  <span class="visually-hidden"></span>
+</div>
 	</div>
 </div>
  

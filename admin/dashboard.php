@@ -14,7 +14,7 @@ if(!isset($_SESSION['auser']))
 <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
-        <title>Ventura - Dashboard</title>
+        <title>ventura - Dashboard</title>
 		
 		<!-- Favicon -->
         <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png">
@@ -33,6 +33,8 @@ if(!isset($_SESSION['auser']))
 		<!-- Main CSS -->
         <link rel="stylesheet" href="assets/css/style.css">
 		
+		<!-- Font awesome -->
+		<script src="https://kit.fontawesome.com/1d1aebbde6.js" crossorigin="anonymous"></script>
 		<!--[if lt IE 9]>
 			<script src="assets/js/html5shiv.min.js"></script>
 			<script src="assets/js/respond.min.js"></script>
@@ -53,10 +55,10 @@ if(!isset($_SESSION['auser']))
                 <div class="content container-fluid">
 					
 					<!-- Page Header -->
-					<div class="page-header">
+					<div class="page-header mt-5 mt-5">
 						<div class="row">
 							<div class="col-sm-12">
-								<h3 class="page-title">Welcome Admin!</h3>
+								<h3 class="page-title">Welcome Dashboard</h3>
 								<p></p>
 								<ul class="breadcrumb">
 									<li class="breadcrumb-item active">Dashboard</li>
@@ -72,7 +74,7 @@ if(!isset($_SESSION['auser']))
 								<div class="card-body">
 									<div class="dash-widget-header">
 										<span class="dash-widget-icon bg-primary">
-											<i class="fe fe-users"></i>
+										<i class="fa-solid fa-users"></i>
 										</span>
 										
 									</div>
@@ -95,7 +97,7 @@ if(!isset($_SESSION['auser']))
 								<div class="card-body">
 									<div class="dash-widget-header">
 										<span class="dash-widget-icon bg-success">
-											<i class="fe fe-users"></i>
+										<i class="fa-solid fa-user-tie"></i>
 										</span>
 										
 									</div>
@@ -118,7 +120,7 @@ if(!isset($_SESSION['auser']))
 								<div class="card-body">
 									<div class="dash-widget-header">
 										<span class="dash-widget-icon bg-danger">
-											<i class="fe fe-user"></i>
+										<i class="fa-solid fa-building-user"></i>
 										</span>
 										
 									</div>
@@ -141,7 +143,7 @@ if(!isset($_SESSION['auser']))
 								<div class="card-body">
 									<div class="dash-widget-header">
 										<span class="dash-widget-icon bg-info">
-											<i class="fe fe-home"></i>
+										<i class="fa-solid fa-tree-city"></i>
 										</span>
 										
 									</div>
@@ -168,7 +170,7 @@ if(!isset($_SESSION['auser']))
 								<div class="card-body">
 									<div class="dash-widget-header">
 										<span class="dash-widget-icon bg-warning">
-											<i class="fe fe-table"></i>
+										<i class="fa-solid fa-rectangle-xmark"></i>
 										</span>
 										
 									</div>
@@ -192,7 +194,7 @@ if(!isset($_SESSION['auser']))
 								<div class="card-body">
 									<div class="dash-widget-header">
 										<span class="dash-widget-icon bg-info">
-											<i class="fe fe-home"></i>
+										<i class="fa-solid fa-house-circle-check"></i>
 										</span>
 										
 									</div>
@@ -216,7 +218,7 @@ if(!isset($_SESSION['auser']))
 								<div class="card-body">
 									<div class="dash-widget-header">
 										<span class="dash-widget-icon bg-secondary">
-											<i class="fe fe-building"></i>
+										<i class="fa-solid fa-building"></i>
 										</span>
 										
 									</div>
@@ -240,7 +242,7 @@ if(!isset($_SESSION['auser']))
 								<div class="card-body">
 									<div class="dash-widget-header">
 										<span class="dash-widget-icon bg-primary">
-											<i class="fe fe-tablet"></i>
+										<i class="fa-solid fa-tablet-screen-button"></i>
 										</span>
 										
 									</div>
@@ -266,7 +268,7 @@ if(!isset($_SESSION['auser']))
 								<div class="card-body">
 									<div class="dash-widget-header">
 										<span class="dash-widget-icon bg-success">
-											<i class="fe fe-quote-left"></i>
+										<i class="fa-solid fa-quote-left"></i>
 										</span>
 										
 									</div>
@@ -290,7 +292,7 @@ if(!isset($_SESSION['auser']))
 								<div class="card-body">
 									<div class="dash-widget-header">
 										<span class="dash-widget-icon bg-info">
-											<i class="fe fe-quote-right"></i>
+										<i class="fa-solid fa-quote-right"></i>
 										</span>
 										
 									</div>
