@@ -52,7 +52,7 @@ if(!isset($_SESSION['auser']))
 								</div>
 								<div class="user-text">
 									<h6><?php echo $_SESSION['auser'];?></h6>
-									<p class="text-muted mb-0">venturaistrator</p>
+									<p class="text-muted mb-0">Admin</p>
 								</div>
 							</div>
 							<a class="dropdown-item" href="profile.php">Profile</a>
