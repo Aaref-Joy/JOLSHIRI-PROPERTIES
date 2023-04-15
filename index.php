@@ -1,8 +1,8 @@
-<?php 
-ini_set('session.cache_limiter','public');
+<?php
+ini_set('session.cache_limiter', 'public');
 session_cache_limiter(false);
 session_start();
-include("config.php");							
+include("config.php");
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -18,12 +18,12 @@ include("config.php");
 <link rel="shortcut icon" href="images/favicon.ico">
 
 <!--	Fonts
-	========================================================-->
+    ========================================================-->
 <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,500,600,700&amp;display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Comfortaa:400,700" rel="stylesheet">
 
 <!--	Css Link
-	========================================================-->
+    ========================================================-->
 <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="css/bootstrap-slider.css">
 <link rel="stylesheet" type="text/css" href="css/jquery-ui.css">
@@ -35,27 +35,27 @@ include("config.php");
 <link rel="stylesheet" type="text/css" href="css/style.css">
 
 <!--	Title
-	=========================================================-->
+    =========================================================-->
 <title> Mono Line</title>
 </head>
 <body>
 
 <!--	Page Loader  -->
 <div class="page-loader position-fixed z-index-9999 w-100 bg-white vh-100">
-	<div class="d-flex justify-content-center y-middle position-relative">
+    <div class="d-flex justify-content-center y-middle position-relative">
     <div class="spinner-grow" role="status">
   <span class="visually-hidden"></span>
 </div>
-	</div>
+    </div>
 </div> 
 <!--	Page Loader  -->
 
 <div id="page-wrapper">
     <div class="row"> 
         <!--	Header start  -->
-		<?php include("include/header.php");?>
+        <?php include("include/header.php"); ?>
         <!--	Header end  -->
-		
+        
         <!--	Banner Start   -->
         <div class=" w-100 slider-banner1 position-relative" style="background-image: url('https://i.ibb.co/9rJWKdn/slider8.jpg'); background-size: cover; background-position: center center; background-repeat: no-repeat;">
             <div class="container h-100">
@@ -64,19 +64,19 @@ include("config.php");
                         <div class="text-dark">
                             <h1 class="mb-4"><span class="">Easy Way to Find a</span><br>
                             Perfect Property</h1> 
-                            <span class='text-dark '>From as low as $10 per day with limited time offer discounts.</span>
+                            <span class='text-dark '>limited time offer discounts.</span>
                             <form method="post" action="propertygrid.php">
                                 <div class="row">
                                     <div class="col-md-6 col-lg-2">
                                         <div class="form-group">
                                             <select class="form-control" name="type">
                                                 <option value="">Select Type</option>
-												<option value="apartment">Apartment</option>
-												<option value="flat">Flat</option>
-												<option value="building">Building</option>
-												<option value="house">House</option>
-												<option value="villa">Villa</option>
-												<option value="office">Office</option>
+                                                <option value="apartment">Apartment</option>
+                                                <option value="flat">Flat</option>
+                                                <option value="building">Building</option>
+                                                <option value="house">House</option>
+                                                <option value="villa">Villa</option>
+                                                <option value="office">Office</option>
                                             </select>
                                         </div>
                                     </div>
@@ -84,8 +84,8 @@ include("config.php");
                                         <div class="form-group">
                                             <select class="form-control" name="stype">
                                                 <option value="">Select Status</option>
-												<option value="rent">Rent</option>
-												<option value="sale">Sale</option>
+                                                <option value="rent">Rent</option>
+                                                <option value="sale">Sale</option>
                                             </select>
                                         </div>
                                     </div>
@@ -109,55 +109,55 @@ include("config.php");
         <!--	Banner End  -->
         
         <!--	Text Block One
-		======================================================-->
+        ======================================================-->
         <div class="full-row bg-gray">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12"> 
-                        <h2 class="text-secondary double-down-line text-center mb-5">What We Do</h2></div>
+                        <h2 class="text-secondary  text-center mb-5">Our Purpose</h2></div>
                 </div>
                 <div class="text-box-one">
                     <div class="row">
                         <div class="col-lg-3 col-md-6">
                             <div class="p-4 text-center hover-bg-white hover-shadow rounded mb-4 transation-3s"> 
-								<i class="flaticon-rent text-dark flat-medium" aria-hidden="true"></i>
+                                <i class="flaticon-rent text-dark flat-medium" aria-hidden="true"></i>
                                 <h5 class="text-secondary hover-text-light  py-3 m-0"><a href="#">Selling Service</a></h5>
-                                <p>This is a dummy text for filling out spaces. Just some random words...</p>
+                                <p>Professional real estate services: buying, selling, renting. Experienced, knowledgeable, and committed. Contact us today.</p>
                             </div>
                         </div>
                         <div class="col-lg-3 col-md-6">
                             <div class="p-4 text-center hover-bg-white hover-shadow rounded mb-4 transation-3s"> 
-								<i class="flaticon-for-rent text-dark  flat-medium" aria-hidden="true"></i>
+                                <i class="flaticon-for-rent text-dark  flat-medium" aria-hidden="true"></i>
                                 <h5 class="text-secondary hover-text-light  py-3 m-0"><a href="#">Rental Service</a></h5>
-                                <p>This is a dummy text for filling out spaces. Just some random words...</p>
+                                <p>We offer comprehensive rental services for real estate properties, with a focus on reliability and transparency.</p>
                             </div>
                         </div>
                         <div class="col-lg-3 col-md-6">
                             <div class="p-4 text-center hover-bg-white hover-shadow rounded mb-4 transation-3s"> 
-								<i class="flaticon-list text-dark  flat-medium" aria-hidden="true"></i>
+                                <i class="flaticon-list text-dark  flat-medium" aria-hidden="true"></i>
                                 <h5 class="text-secondary hover-text-light  py-3 m-0"><a href="#">Property Listing</a></h5>
-                                <p>This is a dummy text for filling out spaces. Just some random words...</p>
+                                <p>Charming 2BR/1BA cottage with updated kitchen, fenced yard, and easy access to downtown.</p>
                             </div>
                         </div>
                         <div class="col-lg-3 col-md-6">
                             <div class="p-4 text-center hover-bg-white hover-shadow rounded mb-4 transation-3s"> 
-								<i class="flaticon-diagram text-dark  flat-medium" aria-hidden="true"></i>
+                                <i class="flaticon-diagram text-dark  flat-medium" aria-hidden="true"></i>
                                 <h5 class="text-secondary hover-text-light  py-3 m-0"><a href="#">Legal Investment</a></h5>
-                                <p>This is a dummy text for filling out spaces. Just some random words...</p>
+                                <p>Commercial property with long-term lease, stable cash flow, and potential for appreciation in value.</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-		<!-----  Our Services  ---->
-		
+        <!-----  Our Services  ---->
+        
         <!--	Recent Properties  -->
         <div class="full-row">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
-                        <h2 class="text-secondary double-down-line text-center mb-4">Recent Property</h2>
+                        <h2 class="text-secondary  text-center mb-4">Recent Property</h2>
                     </div>
                     - <div class="col-md-6">
                         <ul class="nav property-btn float-right" id="pills-tab" role="tablist">
@@ -171,41 +171,40 @@ include("config.php");
                         <div class="tab-content mt-4" id="pills-tabContent">
                             <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home">
                                 <div class="row">
-								
-									<?php $query=mysqli_query($con,"SELECT property.*, user.uname,user.utype,user.uimage FROM `property`,`user` WHERE property.uid=user.uid ORDER BY date DESC LIMIT 9");
-										while($row=mysqli_fetch_array($query))
-										{
-									?>
-								
-                                    <div class="col-md-6 col-lg-4"> 
-                                        <div class="featured-thumb hover-zoomer mb-4">
-                                            <div class="overlay-black overflow-hidden position-relative"> <img src="ventura/property/<?php echo $row['18'];?>" alt="pimage">
-                                                <div class="featured bg-success text-white">New</div>
-                                                <div class="sale bg-success text-white text-capitalize">For <?php echo $row['5'];?></div>
-                                                <div class="price text-light"><b>$<?php echo $row['13'];?> </b><span class="text-white"><?php echo $row['12'];?> Sqft</span></div>
-                                            </div>
-                                            <div class="featured-thumb-data shadow-one">
-                                                <div class="p-3">
-                                                    <h5 class="text-secondary hover-text-light  mb-2 text-capitalize"><a href="propertydetail.php?pid=<?php echo $row['0'];?>"><?php echo $row['1'];?></a></h5>
-                                                    <span class="location text-capitalize"><i class="fas fa-map-marker-alt text-light "></i> <?php echo $row['14'];?></span> </div>
-                                                <div class="bg-gray quantity px-4 pt-4">
-                                                    <ul>
-                                                        <li><span><?php echo $row['12'];?></span> Sqft</li>
-                                                        <li><span><?php echo $row['6'];?></span> Beds</li>
-                                                        <li><span><?php echo $row['7'];?></span> Baths</li>
-                                                        <li><span><?php echo $row['9'];?></span> Kitchen</li>
-                                                        <li><span><?php echo $row['8'];?></span> Balcony</li>
+                                
+                                    <?php $query = mysqli_query($con, "SELECT property.*, user.uname,user.utype,user.uimage FROM `property`,`user` WHERE property.uid=user.uid ORDER BY date DESC LIMIT 9");
+                                    while ($row = mysqli_fetch_array($query)) {
+                                        ?>
+                                
+                                            <div class="col-md-6 col-lg-4"> 
+                                                <div class="featured-thumb hover-zoomer mb-4">
+                                                    <div class="overlay-black overflow-hidden position-relative"> <img src=" admin/property/<?php echo $row['18']; ?>" alt="pimage">
+                                                        <div class="featured bg-success text-white">New</div>
+                                                        <div class="sale bg-success text-white text-capitalize">For <?php echo $row['5']; ?></div>
+                                                        <div class="price text-light"><b>$<?php echo $row['13']; ?> </b><span class="text-white"><?php echo $row['12']; ?> Sqft</span></div>
+                                                    </div>
+                                                    <div class="featured-thumb-data shadow-one">
+                                                        <div class="p-3">
+                                                            <h5 class="text-secondary hover-text-light  mb-2 text-capitalize"><a href="propertydetail.php?pid=<?php echo $row['0']; ?>"><?php echo $row['1']; ?></a></h5>
+                                                            <span class="location text-capitalize"><i class="fas fa-map-marker-alt text-light "></i> <?php echo $row['14']; ?></span> </div>
+                                                        <div class="bg-gray quantity px-4 pt-4">
+                                                            <ul>
+                                                                <li><span><?php echo $row['12']; ?></span> Sqft</li>
+                                                                <li><span><?php echo $row['6']; ?></span> Beds</li>
+                                                                <li><span><?php echo $row['7']; ?></span> Baths</li>
+                                                                <li><span><?php echo $row['9']; ?></span> Kitchen</li>
+                                                                <li><span><?php echo $row['8']; ?></span> Balcony</li>
                                                         
-                                                    </ul>
-                                                </div>
-                                                <div class="p-4 d-inline-block w-100">
-                                                    <div class="float-left text-capitalize"><i class="fas fa-user text-light  mr-1"></i>By : <?php echo $row['uname'];?></div>
-                                                    <div class="float-right"><i class="far fa-calendar-alt text-light  mr-1"></i> <?php echo date('d-m-Y', strtotime($row['date']));?></div> 
+                                                            </ul>
+                                                        </div>
+                                                        <div class="p-4 d-inline-block w-100">
+                                                            <div class="float-left text-capitalize"><i class="fas fa-user text-light  mr-1"></i>By : <?php echo $row['uname']; ?></div>
+                                                            <div class="float-right"><i class="far fa-calendar-alt text-light  mr-1"></i> <?php echo date('d-m-Y', strtotime($row['date'])); ?></div> 
+                                                        </div>
+                                                    </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                    </div>
-									<?php } ?>
+                                    <?php } ?>
 
                                 </div>
                             </div>
@@ -217,7 +216,7 @@ include("config.php");
                 </div>
             </div>
         </div>
-		<!--	Recent Properties  -->
+        <!--	Recent Properties  -->
         
         <!--	Why Choose Us -->
         <div class="full-row living bg-one overlay-secondary-half" style="background-image: url('https://i.ibb.co/zhv06HW/pexels-skitterphoto-584399.jpg'); background-size: cover; background-position: center center; background-repeat: no-repeat;">
@@ -228,25 +227,25 @@ include("config.php");
                             <h3 class="pb-4 mb-3 text-white">Why Choose Us</h3>
                             <ul>
                                 <li class="mb-4 text-white d-flex"> 
-									<i class="flaticon-reward flat-medium float-left d-table mr-4 text-light" aria-hidden="true"></i>
-									<div class="pl-2">
-										<h5 class="mb-3">Top Rated</h5>
-										<p>This is a dummy text for filling out spaces. This is just a dummy text for filling out blank spaces.</p>
-									</div>
+                                    <i class="flaticon-reward flat-medium float-left d-table mr-4 text-light" aria-hidden="true"></i>
+                                    <div class="pl-2">
+                                        <h5 class="mb-3">Top Rated</h5>
+                                        <p>Our top-rated real estate team combines expertise, integrity, and exceptional service to help you achieve your goals.</p>
+                                    </div>
                                 </li>
                                 <li class="mb-4 text-white d-flex"> 
-									<i class="flaticon-real-estate flat-medium float-left d-table mr-4 text-light" aria-hidden="true"></i>
-									<div class="pl-2">
-										<h5 class="mb-3">Experience Quality</h5>
-										<p>This is a dummy text for filling out spaces. This is just a dummy text for filling out blank spaces.</p>
-									</div>
+                                    <i class="flaticon-real-estate flat-medium float-left d-table mr-4 text-light" aria-hidden="true"></i>
+                                    <div class="pl-2">
+                                        <h5 class="mb-3">Experience Quality</h5>
+                                        <p>Trust in our experienced real estate agents to provide top-quality service and unparalleled market knowledge to help you succeed.</p>
+                                    </div>
                                 </li>
                                 <li class="mb-4 text-white d-flex"> 
-									<i class="flaticon-seller flat-medium float-left d-table mr-4 text-light" aria-hidden="true"></i>
-									<div class="pl-2">
-										<h5 class="mb-3">Experienced Agents</h5>
-										<p>This is a dummy text for filling out spaces. This is just a dummy text for filling out blank spaces.</p>
-									</div>
+                                    <i class="flaticon-seller flat-medium float-left d-table mr-4 text-light" aria-hidden="true"></i>
+                                    <div class="pl-2">
+                                        <h5 class="mb-3">Experienced Agents</h5>
+                                        <p>Our team of experienced real estate agents offers expert guidance, exceptional service, and a proven track record of success.</p>
+                                    </div>
                                 </li>
                             </ul>
                         </div>
@@ -254,14 +253,14 @@ include("config.php");
                 </div>
             </div>
         </div>
-		<!--	why choose us -->
-		
-		<!--	How it work -->
+        <!--	why choose us -->
+        
+        <!--	How it work -->
         <div class="full-row">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
-                        <h2 class="text-secondary double-down-line text-center mb-5">How It Work</h2>
+                        <h2 class="text-secondary  text-center mb-5">How It Work</h2>
                         </div>
                 </div>
                 <div class="row">
@@ -270,7 +269,7 @@ include("config.php");
                             <div class="bg-success text-white rounded-circle position-absolute z-index-9">1</div>
                             <div class="left-arrow"><i class="flaticon-investor flat-medium icon-success" aria-hidden="true"></i></div>
                             <h5 class="text-secondary mt-5 mb-4">Discussion</h5>
-                            <p>Nascetur cubilia sociosqu aliquet ut elit nascetur nullam duis tincidunt nisl non quisque vestibulum platea ornare ridiculus.</p>
+                            <p>At our agency, we believe that open and honest discussion is key to a successful real estate experience for our clients.</p>
                         </div>
                     </div>
                     <div class="col-md-4">
@@ -278,7 +277,7 @@ include("config.php");
                             <div class="bg-success text-white rounded-circle position-absolute z-index-9">2</div>
                             <div class="left-arrow"><i class="flaticon-search flat-medium icon-success" aria-hidden="true"></i></div>
                             <h5 class="text-secondary mt-5 mb-4">Files Review</h5>
-                            <p>Nascetur cubilia sociosqu aliquet ut elit nascetur nullam duis tincidunt nisl non quisque vestibulum platea ornare ridiculus.</p>
+                            <p>Rest assured that our team will meticulously review all real estate files to provide you with the best possible outcome.</p>
                         </div>
                     </div>
                     <div class="col-md-4">
@@ -286,7 +285,7 @@ include("config.php");
                             <div class="bg-success text-white rounded-circle position-absolute z-index-9">3</div>
                             <div><i class="flaticon-handshake flat-medium icon-success" aria-hidden="true"></i></div>
                             <h5 class="text-secondary mt-5 mb-4">Acquire</h5>
-                            <p>Nascetur cubilia sociosqu aliquet ut elit nascetur nullam duis tincidunt nisl non quisque vestibulum platea ornare ridiculus.</p>
+                            <p>Let our team help you navigate the real estate acquisition process and find the perfect property for your needs and budget.</p>
                         </div>
                     </div>
                 </div>
@@ -298,7 +297,7 @@ include("config.php");
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
-                        <h2 class="text-secondary double-down-line text-center mb-5">Popular Places</h2></div>
+                        <h2 class="text-secondary  text-center mb-5">Popular Places</h2></div>
                 </div> 
                 <div class="col-lg-12">
                     <div class="row">
@@ -306,61 +305,57 @@ include("config.php");
                             <div class="overflow-hidden position-relative overlay-secondary hover-zoomer mx-n13 z-index-9"> 
                                 <img src="images/thumbnail4/1.jpg" alt="">
                                 <div class="text-white xy-center z-index-9 position-absolute text-center w-100">
-									<?php
-										$query=mysqli_query($con,"SELECT count(state), property.* FROM property where city='Jashore'");
-											while($row=mysqli_fetch_array($query))
-												{
-										?>
-                                    <h4 class="hover-text-light  text-capitalize"><a href="stateproperty.php?id=<?php echo $row['17']?>"><?php echo $row['state'];?></a></h4>
-                                    <span><?php 
-												$total = $row[0];
-												echo $total;?> Properties Listed</span> </div>
-									<?php } ?>
+                                    <?php
+                                    $query = mysqli_query($con, "SELECT count(state), property.* FROM property where city='Jashore'");
+                                    while ($row = mysqli_fetch_array($query)) {
+                                        ?>
+                                            <h4 class="hover-text-light  text-capitalize"><a href="stateproperty.php?id=<?php echo $row['17'] ?>"><?php echo $row['state']; ?></a></h4>
+                                            <span><?php
+                                            $total = $row[0];
+                                            echo $total; ?> Properties Listed</span> </div>
+                                    <?php } ?>
                             </div>
                         </div> 
                         <div class="col-md-6 col-lg-3 pb-1">
                             <div class="overflow-hidden position-relative overlay-secondary hover-zoomer mx-n13 z-index-9"> <img src="images/thumbnail4/2.jpg" alt="">
                                 <div class="text-white xy-center z-index-9 position-absolute text-center w-100">
-									<?php
-										$query=mysqli_query($con,"SELECT count(state), property.* FROM property where city='Seattle'");
-											while($row=mysqli_fetch_array($query))
-												{
-										?>
-                                    <h4 class="hover-text-light  text-capitalize"><a href="stateproperty.php?id=<?php echo $row['17']?>"><?php echo $row['state'];?></a></h4>
-                                    <span><?php 
-												$total = $row[0];
-												echo $total;?> Properties Listed</span> </div>
-									<?php } ?>
+                                    <?php
+                                    $query = mysqli_query($con, "SELECT count(state), property.* FROM property where city='Seattle'");
+                                    while ($row = mysqli_fetch_array($query)) {
+                                        ?>
+                                            <h4 class="hover-text-light  text-capitalize"><a href="stateproperty.php?id=<?php echo $row['17'] ?>"><?php echo $row['state']; ?></a></h4>
+                                            <span><?php
+                                            $total = $row[0];
+                                            echo $total; ?> Properties Listed</span> </div>
+                                    <?php } ?>
                             </div>
                         </div>
                         <div class="col-md-6 col-lg-3 pb-1"> 
                             <div class="overflow-hidden position-relative overlay-secondary hover-zoomer mx-n13 z-index-9"> <img src="images/thumbnail4/3.jpg" alt="">
                                 <div class="text-white xy-center z-index-9 position-absolute text-center w-100">
                                     <?php
-										$query=mysqli_query($con,"SELECT count(state), property.* FROM property where city='Floson'");
-											while($row=mysqli_fetch_array($query))
-												{
-										?>
-                                    <h4 class="hover-text-light  text-capitalize"><a href="stateproperty.php?id=<?php echo $row['17']?>"><?php echo $row['state'];?></a></h4>
-                                    <span><?php 
-												$total = $row[0];
-												echo $total;?> Properties Listed</span> </div>
-									<?php } ?>
+                                    $query = mysqli_query($con, "SELECT count(state), property.* FROM property where city='Floson'");
+                                    while ($row = mysqli_fetch_array($query)) {
+                                        ?>
+                                            <h4 class="hover-text-light  text-capitalize"><a href="stateproperty.php?id=<?php echo $row['17'] ?>"><?php echo $row['state']; ?></a></h4>
+                                            <span><?php
+                                            $total = $row[0];
+                                            echo $total; ?> Properties Listed</span> </div>
+                                    <?php } ?>
                             </div>
                         </div>
                         <div class="col-md-6 col-lg-3 pb-1">
                             <div class="overflow-hidden position-relative overlay-secondary hover-zoomer mx-n13 z-index-9"> <img src="images/thumbnail4/4.jpg" alt="">
                                 <div class="text-white xy-center z-index-9 position-absolute text-center w-100">
                                     <?php
-										$query=mysqli_query($con,"SELECT count(state), property.* FROM property where city='Ulmore'");
-											while($row=mysqli_fetch_array($query))
-												{
-										?>
-                                    <h4 class="hover-text-light  text-capitalize"><a href="stateproperty.php?id=<?php echo $row['17']?>"><?php echo $row['state'];?></a></h4>
-                                    <span><?php 
-												$total = $row[0];
-												echo $total;?> Properties Listed</span> </div>
-									<?php } ?>
+                                    $query = mysqli_query($con, "SELECT count(state), property.* FROM property where city='Ulmore'");
+                                    while ($row = mysqli_fetch_array($query)) {
+                                        ?>
+                                            <h4 class="hover-text-light  text-capitalize"><a href="stateproperty.php?id=<?php echo $row['17'] ?>"><?php echo $row['state']; ?></a></h4>
+                                            <span><?php
+                                            $total = $row[0];
+                                            echo $total; ?> Properties Listed</span> </div>
+                                    <?php } ?>
                             </div>
                         </div> 
                     </div>
@@ -368,48 +363,47 @@ include("config.php");
             </div>
         </div>
         <!--	Popular Places -->
-		
-		<!--	Testonomial -->
-		<div class="full-row">
+        
+        <!--	Testonomial -->
+        <div class="full-row">
             <div class="container">
                 <div class="row">
-					<div class="col-lg-12">
-						<div class="content-sidebar p-4">
-							<div class="mb-3 col-lg-12">
-								<h4 class="double-down-line-left text-secondary position-relative pb-4 mb-4">Testimonial</h4>
-									<div class="recent-review owl-carousel owl-dots-gray owl-dots-hover-success">
-									
-										<?php
-													
-												$query=mysqli_query($con,"select feedback.*, user.* from feedback,user where feedback.uid=user.uid and feedback.status='1'");
-												while($row=mysqli_fetch_array($query))
-													{
-										?>
-										<div class="item">
-											<div class="p-4 bg-success 
+                    <div class="col-lg-12">
+                        <div class="content-sidebar p-4">
+                            <div class="mb-3 col-lg-12">
+                                <!-- <h4 class="double-down-line-left text-secondary position-relative pb-4 mb-4">Testimonial</h4> -->
+                                    <div class="recent-review owl-carousel owl-dots-gray owl-dots-hover-success">
+                                    
+                                        <?php
+
+                                        $query = mysqli_query($con, "select feedback.*, user.* from feedback,user where feedback.uid=user.uid and feedback.status='1'");
+                                        while ($row = mysqli_fetch_array($query)) {
+                                            ?>
+                                                <div class="item">
+                                                    <div class="p-4 bg-success 
                                             down-angle-white
                                             position-relative">
-												<p class="text-white"><i class="fas fa-quote-left mr-2 text-white"></i><?php echo $row['2']; ?>. <i class="fas fa-quote-right mr-2 text-white"></i></p>
-											</div>
-											<div class="p-2 mt-4">
-												<span class="text-dark  d-table text-capitalize"><?php echo $row['uname']; ?></span> <span class="text-capitalize"><?php echo $row['utype']; ?></span>
-											</div>
-										</div>
-										<?php }  ?>
-										
-									</div>
-							</div>
-						 </div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!--	Testonomial -->
-		
-		
+                                                        <p class="text-white"><i class="fas fa-quote-left mr-2 text-white"></i><?php echo $row['2']; ?>. <i class="fas fa-quote-right mr-2 text-white"></i></p>
+                                                    </div>
+                                                    <div class="p-2 mt-4">
+                                                        <span class="text-dark  d-table text-capitalize"><?php echo $row['uname']; ?></span> <span class="text-capitalize"><?php echo $row['utype']; ?></span>
+                                                    </div>
+                                                </div>
+                                        <?php } ?>
+                                        
+                                    </div>
+                            </div>
+                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--	Testonomial -->
+        
+        
         <!--	Footer   start-->
-		<?php include("include/footer.php");?>
-		<!--	Footer   start-->
+        <?php include("include/footer.php"); ?>
+        <!--	Footer   start-->
         
         
         <!-- Scroll to top --> 

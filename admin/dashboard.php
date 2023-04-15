@@ -2,36 +2,35 @@
 session_start();
 require("config.php");
 ////code
- 
-if(!isset($_SESSION['auser']))
-{
+
+if (!isset($_SESSION['auser'])) {
 	header("location:index.php");
 }
 ?>
 <!DOCTYPE html>
 <html lang="en">
-    
+	
 <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
-        <title>ventura - Dashboard</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+		<title> admin - Dashboard</title>
 		
 		<!-- Favicon -->
-        <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png">
+		<link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png">
 		
 		<!-- Bootstrap CSS -->
-        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+		<link rel="stylesheet" href="assets/css/bootstrap.min.css">
 		
 		<!-- Fontawesome CSS -->
-        <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+		<link rel="stylesheet" href="assets/css/font-awesome.min.css">
 		
 		<!-- Feathericon CSS -->
-        <link rel="stylesheet" href="assets/css/feathericon.min.css">
+		<link rel="stylesheet" href="assets/css/feathericon.min.css">
 		
 		<link rel="stylesheet" href="assets/plugins/morris/morris.css">
 		
 		<!-- Main CSS -->
-        <link rel="stylesheet" href="assets/css/style.css">
+		<link rel="stylesheet" href="assets/css/style.css">
 		
 		<!-- Font awesome -->
 		<script src="https://kit.fontawesome.com/1d1aebbde6.js" crossorigin="anonymous"></script>
@@ -39,8 +38,8 @@ if(!isset($_SESSION['auser']))
 			<script src="assets/js/html5shiv.min.js"></script>
 			<script src="assets/js/respond.min.js"></script>
 		<![endif]-->
-    </head>
-    <body>
+	</head>
+	<body>
 	
 		<!-- Main Wrapper -->
 
@@ -50,9 +49,9 @@ if(!isset($_SESSION['auser']))
 			<!-- /Header -->
 			
 			<!-- Page Wrapper -->
-            <div class="page-wrapper">
+			<div class="page-wrapper">
 			
-                <div class="content container-fluid">
+				<div class="content container-fluid">
 					
 					<!-- Page Header -->
 					<div class="page-header mt-5 mt-5">
@@ -82,7 +81,7 @@ if(!isset($_SESSION['auser']))
 										
 										<h3><?php $sql = "SELECT * FROM user WHERE utype = 'user'";
 										$query = $con->query($sql);
-                						echo "$query->num_rows";?></h3>
+										echo "$query->num_rows"; ?></h3>
 										
 										<h6 class="text-muted">Registered Users</h6>
 										<div class="progress progress-sm">
@@ -104,8 +103,8 @@ if(!isset($_SESSION['auser']))
 									<div class="dash-widget-info">
 										
 									<h3><?php $sql = "SELECT * FROM user WHERE utype = 'agent'";
-										$query = $con->query($sql);
-                						echo "$query->num_rows";?></h3>
+									$query = $con->query($sql);
+									echo "$query->num_rows"; ?></h3>
 										
 										<h6 class="text-muted">Agents</h6>
 										<div class="progress progress-sm">
@@ -127,8 +126,8 @@ if(!isset($_SESSION['auser']))
 									<div class="dash-widget-info">
 										
 									<h3><?php $sql = "SELECT * FROM user WHERE utype = 'builder'";
-										$query = $con->query($sql);
-                						echo "$query->num_rows";?></h3>
+									$query = $con->query($sql);
+									echo "$query->num_rows"; ?></h3>
 										
 										<h6 class="text-muted">Builder</h6>
 										<div class="progress progress-sm">
@@ -150,8 +149,8 @@ if(!isset($_SESSION['auser']))
 									<div class="dash-widget-info">
 										
 									<h3><?php $sql = "SELECT * FROM property";
-										$query = $con->query($sql);
-                						echo "$query->num_rows";?></h3>
+									$query = $con->query($sql);
+									echo "$query->num_rows"; ?></h3>
 										
 										<h6 class="text-muted">Properties</h6>
 										<div class="progress progress-sm">
@@ -177,8 +176,8 @@ if(!isset($_SESSION['auser']))
 									<div class="dash-widget-info">
 										
 									<h3><?php $sql = "SELECT * FROM property where type = 'apartment'";
-										$query = $con->query($sql);
-                						echo "$query->num_rows";?></h3>
+									$query = $con->query($sql);
+									echo "$query->num_rows"; ?></h3>
 										
 										<h6 class="text-muted">No. of Apartments</h6>
 										<div class="progress progress-sm">
@@ -201,8 +200,8 @@ if(!isset($_SESSION['auser']))
 									<div class="dash-widget-info">
 										
 									<h3><?php $sql = "SELECT * FROM property where type = 'house'";
-										$query = $con->query($sql);
-                						echo "$query->num_rows";?></h3>
+									$query = $con->query($sql);
+									echo "$query->num_rows"; ?></h3>
 										
 										<h6 class="text-muted">No. of Houses</h6>
 										<div class="progress progress-sm">
@@ -225,8 +224,8 @@ if(!isset($_SESSION['auser']))
 									<div class="dash-widget-info">
 										
 									<h3><?php $sql = "SELECT * FROM property where type = 'building'";
-										$query = $con->query($sql);
-                						echo "$query->num_rows";?></h3>
+									$query = $con->query($sql);
+									echo "$query->num_rows"; ?></h3>
 										
 										<h6 class="text-muted">No. of Buildings</h6>
 										<div class="progress progress-sm">
@@ -249,8 +248,8 @@ if(!isset($_SESSION['auser']))
 									<div class="dash-widget-info">
 										
 									<h3><?php $sql = "SELECT * FROM property where type = 'flat'";
-										$query = $con->query($sql);
-                						echo "$query->num_rows";?></h3>
+									$query = $con->query($sql);
+									echo "$query->num_rows"; ?></h3>
 										
 										<h6 class="text-muted">No. of Flat</h6>
 										<div class="progress progress-sm">
@@ -275,8 +274,8 @@ if(!isset($_SESSION['auser']))
 									<div class="dash-widget-info">
 										
 									<h3><?php $sql = "SELECT * FROM property where stype = 'sale'";
-										$query = $con->query($sql);
-                						echo "$query->num_rows";?></h3>
+									$query = $con->query($sql);
+									echo "$query->num_rows"; ?></h3>
 										
 										<h6 class="text-muted">On Sale</h6>
 										<div class="progress progress-sm">
@@ -299,8 +298,8 @@ if(!isset($_SESSION['auser']))
 									<div class="dash-widget-info">
 										
 									<h3><?php $sql = "SELECT * FROM property where stype = 'rent'";
-										$query = $con->query($sql);
-                						echo "$query->num_rows";?></h3>
+									$query = $con->query($sql);
+									echo "$query->num_rows"; ?></h3>
 										
 										<h6 class="text-muted">Rentals</h6>
 										<div class="progress progress-sm">
@@ -350,14 +349,14 @@ if(!isset($_SESSION['auser']))
 		<!-- /Main Wrapper -->
 		
 		<!-- jQuery -->
-        <script src="assets/js/jquery-3.2.1.min.js"></script>
+		<script src="assets/js/jquery-3.2.1.min.js"></script>
 		
 		<!-- Bootstrap Core JS -->
-        <script src="assets/js/popper.min.js"></script>
-        <script src="assets/js/bootstrap.min.js"></script>
+		<script src="assets/js/popper.min.js"></script>
+		<script src="assets/js/bootstrap.min.js"></script>
 		
 		<!-- Slimscroll JS -->
-        <script src="assets/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+		<script src="assets/plugins/slimscroll/jquery.slimscroll.min.js"></script>
 		
 		<script src="assets/plugins/raphael/raphael.min.js"></script>    
 		<script src="assets/plugins/morris/morris.min.js"></script>  
@@ -366,6 +365,6 @@ if(!isset($_SESSION['auser']))
 		<!-- Custom JS -->
 		<script  src="assets/js/script.js"></script>
 		
-    </body>
+	</body>
 
 </html>

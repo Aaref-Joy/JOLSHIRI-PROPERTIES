@@ -1,5 +1,5 @@
-<?php 
-ini_set('session.cache_limiter','public');
+<?php
+ini_set('session.cache_limiter', 'public');
 session_cache_limiter(false);
 session_start();
 include("config.php");
@@ -20,12 +20,12 @@ include("config.php");
 <link rel="shortcut icon" href="images/favicon.ico">
 
 <!--	Fonts
-	========================================================-->
+    ========================================================-->
 <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,500,600,700&amp;display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Comfortaa:400,700" rel="stylesheet">
  
 <!--	Css Link
-	========================================================-->
+    ========================================================-->
 <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="css/bootstrap-slider.css">
 <link rel="stylesheet" type="text/css" href="css/jquery-ui.css">
@@ -37,7 +37,7 @@ include("config.php");
 <link rel="stylesheet" type="text/css" href="css/style.css">
 
 <!--	Title
-	=========================================================-->
+    =========================================================-->
 <title> Mono Line</title>
 </head>
 <body>
@@ -45,11 +45,11 @@ include("config.php");
 <!-- 	Page Loader
 ============================================================= -->
 <div class="page-loader position-fixed z-index-9999 w-100 bg-white vh-100">
-	<div class="d-flex justify-content-center y-middle position-relative">
-	  <div class="spinner-border" role="status">
-		<span class="sr-only">Loading...</span>
-	  </div>
-	</div>
+    <div class="d-flex justify-content-center y-middle position-relative">
+      <div class="spinner-border" role="status">
+        <span class="sr-only">Loading...</span>
+      </div>
+    </div>
 </div>
  
 
@@ -58,7 +58,7 @@ include("config.php");
     <div class="row"> 
         <!--	Header One -->
         <!--	Header start  -->
-		<?php include("include/header.php");?> 
+        <?php include("include/header.php"); ?> 
         <!--	Header end  -->
 
         <!--	Banner   --->
@@ -84,24 +84,23 @@ include("config.php");
 
         <div class="full-row">
             <div class="container">
-				<div class="row">
+                <div class="row">
                     <div class="col-lg-12">
-                        <h2 class="text-secondary double-down-line text-center mb-5">Agent</h2>
+                        <h2 class="text-secondary  text-center mb-5">Agent</h2>
                         </div>
                 </div>
                 <div class="row">
                  
-                    <?php 
-							$query=mysqli_query($con,"SELECT * FROM user WHERE utype='agent'");
-								while($row=mysqli_fetch_array($query))
-								{
-                            ?>
+                    <?php
+                    $query = mysqli_query($con, "SELECT * FROM user WHERE utype='agent'");
+                    while ($row = mysqli_fetch_array($query)) {
+                        ?>
                             
                     <div class="col-md-6 col-lg-4">
                         <div class="hover-zoomer bg-white shadow-one mb-4">
-                            <div class="overflow-hidden"> <img src="ventura/user/<?php echo $row['6'];?>" alt="aimage"> </div>
+                            <div class="overflow-hidden"> <img src=" admin/user/<?php echo $row['6']; ?>" alt="aimage"> </div>
                             <div class="py-3 text-center">
-                                <h5 class="text-secondary hover-text-success"><a href="#"><?php echo $row['1'];?></a></h5>
+                                <h5 class="text-secondary hover-text-success"><a href="#"><?php echo $row['1']; ?></a></h5>
                                 <span>Real Estate - Agent</span> </div>
                         </div>
                     </div>
@@ -115,8 +114,8 @@ include("config.php");
 
 
         <!--	Footer   start-->
-		<?php include("include/footer.php");?>
-		<!--	Footer   start-->
+        <?php include("include/footer.php"); ?>
+        <!--	Footer   start-->
 
 
         <!-- Scroll to top --> 

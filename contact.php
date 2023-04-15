@@ -134,7 +134,7 @@ if(isset($_POST['send']))
 						<div class="container">
                         <div class="row">
 							<div class="col-lg-12">
-								<h2 class="text-secondary double-down-line text-center mb-5">Get In Touch</h2>
+								<h2 class="text-secondary  text-center mb-5">Get In Touch</h2>
 								<?php echo $msg; ?><?php echo $error; ?>
 							</div>
 						</div> 

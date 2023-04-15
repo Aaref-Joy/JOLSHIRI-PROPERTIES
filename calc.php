@@ -99,7 +99,7 @@ if(isset($_REQUEST['calc']))
             <div class="container">
                     <div class="row mb-5">
 						<div class="col-lg-12">
-							<h2 class="text-secondary double-down-line text-center">EMI Calculator</h2>
+							<h2 class="text-secondary  text-center">EMI Calculator</h2>
                         </div>
 					</div>
 					<center>

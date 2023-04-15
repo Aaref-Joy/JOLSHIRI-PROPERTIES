@@ -1,10 +1,10 @@
-<?php 
-ini_set('session.cache_limiter','public');
+<?php
+ini_set('session.cache_limiter', 'public');
 session_cache_limiter(false);
 session_start();
 include("config.php");
 ///code
-								
+
 ?> 
 <!DOCTYPE html>
 <html lang="en">
@@ -22,12 +22,12 @@ include("config.php");
 <link rel="shortcut icon" href="images/favicon.ico">
 
 <!--	Fonts
-	========================================================-->
+    ========================================================-->
 <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,500,600,700&amp;display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Comfortaa:400,700" rel="stylesheet">
  
 <!--	Css Link
-	========================================================-->
+    ========================================================-->
 <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="css/bootstrap-slider.css">
 <link rel="stylesheet" type="text/css" href="css/jquery-ui.css">
@@ -39,7 +39,7 @@ include("config.php");
 <link rel="stylesheet" type="text/css" href="css/style.css">
 
 <!--	Title
-	=========================================================-->
+    =========================================================-->
 <title> Mono Line</title>
 </head>
 <body>
@@ -47,11 +47,11 @@ include("config.php");
 <!--	Page Loader
 =============================================================
 <div class="page-loader position-fixed z-index-9999 w-100 bg-white vh-100">
-	<div class="d-flex justify-content-center y-middle position-relative">
-	  <div class="spinner-border" role="status">
-		<span class="sr-only">Loading...</span>
-	  </div>
-	</div>
+    <div class="d-flex justify-content-center y-middle position-relative">
+      <div class="spinner-border" role="status">
+        <span class="sr-only">Loading...</span>
+      </div>
+    </div>
 </div>
 --> 
 
@@ -59,7 +59,7 @@ include("config.php");
 <div id="page-wrapper">
     <div class="row"> 
         <!--	Header start  -->
-		<?php include("include/header.php");?>
+        <?php include("include/header.php"); ?>
         <!--	Header end  -->
         
         <!--	Banner   --->
@@ -83,41 +83,40 @@ include("config.php");
          <!--	Banner   --->
         
         <!--	Property Grid
-		===============================================================-->
+        ===============================================================-->
         <div class="full-row">
             <div class="container">
                 <div class="row">
-				
-					<div class="col-lg-8">
+                
+                    <div class="col-lg-8">
                         <div class="row">
-						
-							<?php 
-							
-								$state=$_REQUEST['id'];
-								$query=mysqli_query($con,"SELECT property.*, user.uname,user.utype,user.uimage FROM `property`,`user` WHERE property.uid=user.uid and state='$state'");
-								while($row=mysqli_fetch_array($query))
-								{
-							?>
-									
-                            <div class="col-md-6">
-                                <div class="featured-thumb hover-zoomer mb-4">
-                                    <div class="overlay-black overflow-hidden position-relative"> <img src="ventura/property/<?php echo $row['18'];?>" alt="pimage">
+                        
+                            <?php
+
+                            $state = $_REQUEST['id'];
+                            $query = mysqli_query($con, "SELECT property.*, user.uname,user.utype,user.uimage FROM `property`,`user` WHERE property.uid=user.uid and state='$state'");
+                            while ($row = mysqli_fetch_array($query)) {
+                                ?>
+                                    
+                                    <div class="col-md-6">
+                                        <div class="featured-thumb hover-zoomer mb-4">
+                                            <div class="overlay-black overflow-hidden position-relative"> <img src=" admin/property/<?php echo $row['18']; ?>" alt="pimage">
                                          
-                                        <div class="sale bg-success text-white">For <?php echo $row['5'];?></div>
-                                        <div class="price text-primary text-capitalize">$<?php echo $row['13'];?> <span class="text-white"><?php echo $row['12'];?> Sqft</span></div>
+                                                <div class="sale bg-success text-white">For <?php echo $row['5']; ?></div>
+                                                <div class="price text-primary text-capitalize">$<?php echo $row['13']; ?> <span class="text-white"><?php echo $row['12']; ?> Sqft</span></div>
                                         
-                                    </div>
-                                    <div class="featured-thumb-data shadow-one">
-                                        <div class="p-4">
-                                            <h5 class="text-secondary hover-text-success mb-2 text-capitalize"><a href="propertydetail.php?pid=<?php echo $row['0'];?>"><?php echo $row['1'];?></a></h5>
-                                            <span class="location text-capitalize"><i class="fas fa-map-marker-alt text-success"></i> <?php echo $row['14'];?></span> </div>
-                                        <div class="px-4 pb-4 d-inline-block w-100">
-                                            <div class="float-left text-capitalize"><i class="fas fa-user text-success mr-1"></i>By : <?php echo $row['uname'];?></div>
-                                            <div class="float-right"><i class="far fa-calendar-alt text-success mr-1"></i> <?php echo date('d-m-Y', strtotime($row['date']));?></div>
+                                            </div>
+                                            <div class="featured-thumb-data shadow-one">
+                                                <div class="p-4">
+                                                    <h5 class="text-secondary hover-text-success mb-2 text-capitalize"><a href="propertydetail.php?pid=<?php echo $row['0']; ?>"><?php echo $row['1']; ?></a></h5>
+                                                    <span class="location text-capitalize"><i class="fas fa-map-marker-alt text-success"></i> <?php echo $row['14']; ?></span> </div>
+                                                <div class="px-4 pb-4 d-inline-block w-100">
+                                                    <div class="float-left text-capitalize"><i class="fas fa-user text-success mr-1"></i>By : <?php echo $row['uname']; ?></div>
+                                                    <div class="float-right"><i class="far fa-calendar-alt text-success mr-1"></i> <?php echo date('d-m-Y', strtotime($row['date'])); ?></div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                            </div>
                             <?php } ?>
                             
 
@@ -138,11 +137,11 @@ include("config.php");
                             </div>  -->
                         </div>
                     </div>
-					
+                    
                     <div class="col-lg-4">
                         <div class="sidebar-widget">
                             <h4 class="double-down-line-left text-secondary position-relative pb-4 my-4">Instalment Calculator</h4>
-						<form class="d-inline-block w-100" action="calc.php" method="post">
+                        <form class="d-inline-block w-100" action="calc.php" method="post">
                             <label class="sr-only">Property Amount</label>
                             <div class="input-group mb-2 mr-sm-2">
                                 <div class="input-group-prepend">
@@ -171,17 +170,16 @@ include("config.php");
                         <div class="sidebar-widget mt-5">
                             <h4 class="double-down-line-left text-secondary position-relative pb-4 mb-4">Recently Added Property</h4>
                             <ul class="property_list_widget">
-							
-								<?php 
-								$query=mysqli_query($con,"SELECT * FROM `property` ORDER BY date DESC LIMIT 6");
-										while($row=mysqli_fetch_array($query))
-										{
-								?>
-                                <li> <img src="ventura/property/<?php echo $row['18'];?>" alt="pimage">
-                                    <h6 class="text-secondary hover-text-success text-capitalize"><a href="propertydetail.php?pid=<?php echo $row['0'];?>"><?php echo $row['1'];?></a></h6>
-                                    <span class="font-14"><i class="fas fa-map-marker-alt icon-success icon-small"></i> <?php echo $row['14'];?></span>
+                            
+                                <?php
+                                $query = mysqli_query($con, "SELECT * FROM `property` ORDER BY date DESC LIMIT 6");
+                                while ($row = mysqli_fetch_array($query)) {
+                                    ?>
+                                        <li> <img src=" admin/property/<?php echo $row['18']; ?>" alt="pimage">
+                                            <h6 class="text-secondary hover-text-success text-capitalize"><a href="propertydetail.php?pid=<?php echo $row['0']; ?>"><?php echo $row['1']; ?></a></h6>
+                                            <span class="font-14"><i class="fas fa-map-marker-alt icon-success icon-small"></i> <?php echo $row['14']; ?></span>
                                     
-                                </li>
+                                        </li>
                                 <?php } ?>
 
                             </ul>
@@ -194,8 +192,8 @@ include("config.php");
 
         
         <!--	Footer   start-->
-		<?php include("include/footer.php");?>
-		<!--	Footer   start-->
+        <?php include("include/footer.php"); ?>
+        <!--	Footer   start-->
         
         <!-- Scroll to top --> 
         <a href="#" class="bg-secondary text-white hover-text-secondary" id="scroll"><i class="fas fa-angle-up"></i></a> 

@@ -1,55 +1,49 @@
 <?php
 session_start();
-require("config.php"); 
-if(!isset($_SESSION['auser']))
-{
+require("config.php");
+if (!isset($_SESSION['auser'])) {
 	header("location:index.php");
 }
 ///code
-$error="";
-$msg="";
-if(isset($_POST['insert']))
-{
-	$state=$_POST['state'];
-	
-	if(!empty($state)){
-		$sql="insert into state (sname) values('$state')";
-		$result=mysqli_query($con,$sql);
-		if($result)
-			{
-				$msg="<p class='alert alert-success'>State Inserted Successfully</p>";
-						
-			}
-			else
-			{
-				$error="<p class='alert alert-warning'>* State Not Inserted</p>";
-			}
-	}
-	else{
+$error = "";
+$msg = "";
+if (isset($_POST['insert'])) {
+	$state = $_POST['state'];
+
+	if (!empty($state)) {
+		$sql = "insert into state (sname) values('$state')";
+		$result = mysqli_query($con, $sql);
+		if ($result) {
+			$msg = "<p class='alert alert-success'>State Inserted Successfully</p>";
+
+		} else {
+			$error = "<p class='alert alert-warning'>* State Not Inserted</p>";
+		}
+	} else {
 		$error = "<p class='alert alert-warning'>* Fill all the Fields</p>";
 	}
-	
+
 }
 ?>
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
-        <title>ventura - Data Tables</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+		<title> admin - Data Tables</title>
 		
 		<!-- Favicon -->
-        <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png">
+		<link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png">
 		
 		<!-- Bootstrap CSS -->
-        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+		<link rel="stylesheet" href="assets/css/bootstrap.min.css">
 		
 		<!-- Fontawesome CSS -->
-        <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+		<link rel="stylesheet" href="assets/css/font-awesome.min.css">
 		
 		<!-- Feathericon CSS -->
-        <link rel="stylesheet" href="assets/css/feathericon.min.css">
+		<link rel="stylesheet" href="assets/css/feathericon.min.css">
 		
 		<!-- Datatables CSS -->
 		<link rel="stylesheet" href="assets/plugins/datatables/dataTables.bootstrap4.min.css">
@@ -58,25 +52,25 @@ if(isset($_POST['insert']))
 		<link rel="stylesheet" href="assets/plugins/datatables/buttons.bootstrap4.min.css">
 		
 		<!-- Main CSS -->
-        <link rel="stylesheet" href="assets/css/style.css">
+		<link rel="stylesheet" href="assets/css/style.css">
 		
 		<!--[if lt IE 9]>
 			<script src="assets/js/html5shiv.min.js"></script>
 			<script src="assets/js/respond.min.js"></script>
 		<![endif]-->
-    </head>
-    <body>
+	</head>
+	<body>
 	
 		<!-- Main Wrapper -->
 
 		
 			<!-- Header -->
-			<?php include("header.php");?>	
+			<?php include("header.php"); ?>	
 			<!-- /Sidebar -->
 			
 			<!-- Page Wrapper -->
-            <div class="page-wrapper">
-                <div class="content container-fluid">
+			<div class="page-wrapper">
+				<div class="content container-fluid">
 
 					<!-- Page Header -->
 					<div class="page-header mt-5">
@@ -98,11 +92,11 @@ if(isset($_POST['insert']))
 							<div class="card">
 								<div class="card-header">
 									<h1 class="card-title">Add State</h1>
-									<?php echo $error;?>
-									<?php echo $msg;?>
-									<?php 
-										if(isset($_GET['msg']))	
-										echo $_GET['msg'];	
+									<?php echo $error; ?>
+									<?php echo $msg; ?>
+									<?php
+									if (isset($_GET['msg']))
+										echo $_GET['msg'];
 									?>
 								</div>
 								<form method="post" id="insert product" enctype="multipart/form-data">
@@ -139,34 +133,34 @@ if(isset($_POST['insert']))
 								<div class="card-body">
 
 									<table id="basic-datatable " class="table table-bordered table-hover">
-                                            <thead>
-                                                <tr>
-                                                    <th>#</th>
-                                                    <th>State</th>
+											<thead>
+												<tr>
+													<th>#</th>
+													<th>State</th>
 													<th>Actions</th>
-                                                </tr>
-                                            </thead>
-                                        
-                                        
-                                            <tbody>
+												</tr>
+											</thead>
+										
+										
+											<tbody>
 											<?php
-													
-												$query=mysqli_query($con,"select * from state");
-												$cnt=1;
-												while($row=mysqli_fetch_row($query))
-													{
-											?>
-                                                <tr>
-                                                    
-                                                    <td><?php echo $cnt; ?></td>
-                                                    <td><?php echo $row['1']; ?></td>
-													<td><a href="stateedit.php?id=<?php echo $row['0']; ?>"><button class="btn btn-info">Edit</button></a>
-                                                    <a href="statedelete.php?id=<?php echo $row['0']; ?>"><button class="btn btn-danger">Delete</button></a></td>
-                                                </tr>
-                                                <?php $cnt=$cnt+1; } ?>
 
-                                            </tbody>
-                                        </table>
+											$query = mysqli_query($con, "select * from state");
+											$cnt = 1;
+											while ($row = mysqli_fetch_row($query)) {
+												?>
+												<tr>
+													
+													<td><?php echo $cnt; ?></td>
+													<td><?php echo $row['1']; ?></td>
+													<td><a href="stateedit.php?id=<?php echo $row['0']; ?>"><button class="btn btn-info">Edit</button></a>
+													<a href="statedelete.php?id=<?php echo $row['0']; ?>"><button class="btn btn-danger">Delete</button></a></td>
+												</tr>
+												<?php $cnt = $cnt + 1;
+											} ?>
+
+											</tbody>
+										</table>
 								</div>
 							</div>
 						</div>
@@ -192,14 +186,14 @@ if(isset($_POST['insert']))
 			---->
 
 		<!-- jQuery -->
-        <script src="assets/js/jquery-3.2.1.min.js"></script>
+		<script src="assets/js/jquery-3.2.1.min.js"></script>
 		
 		<!-- Bootstrap Core JS -->
-        <script src="assets/js/popper.min.js"></script>
-        <script src="assets/js/bootstrap.min.js"></script>
+		<script src="assets/js/popper.min.js"></script>
+		<script src="assets/js/bootstrap.min.js"></script>
 		
 		<!-- Slimscroll JS -->
-        <script src="assets/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+		<script src="assets/plugins/slimscroll/jquery.slimscroll.min.js"></script>
 		
 		<!-- Datatables JS -->
 		<!-- Datatables JS -->
@@ -219,5 +213,5 @@ if(isset($_POST['insert']))
 		<!-- Custom JS -->
 		<script  src="assets/js/script.js"></script>
 		
-    </body>
+	</body>
 </html>

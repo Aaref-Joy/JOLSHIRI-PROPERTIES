@@ -1,23 +1,22 @@
 <?php
 // session_start();
 require("config.php");
- 
-if(!isset($_SESSION['auser']))
-{
+
+if (!isset($_SESSION['auser'])) {
 	header("location:index.php");
 }
 ?>  
   <div class="header">
 			
 				<!-- Logo -->
-                <div class="header-left">
-                    <a href="dashboard.php" class="logo">
+				<div class="header-left">
+					<a href="dashboard.php" class="logo">
 						<img src="https://i.ibb.co/zFq4WHZ/Black-Monoline-Real-Estate-Logo-3-1.png" alt="Logo">
 					</a>
 					<a href="dashboard.php" class="logo logo-small">
 						<img src="https://i.ibb.co/zFq4WHZ/Black-Monoline-Real-Estate-Logo-3-1.png" alt="Logo" width="30" height="30">
 					</a>
-                </div>
+				</div>
 				<!-- /Logo -->
 				
 				<a href="javascript:void(0);" id="toggle_btn">
@@ -39,7 +38,7 @@ if(!isset($_SESSION['auser']))
 
 					
 					<!-- User Menu -->
-					<!-- <h4 style="color:white;margin-top:13px;text-transform:capitalize;"><?php echo $_SESSION['auser'];?></h4> -->
+					<!-- <h4 style="color:white;margin-top:13px;text-transform:capitalize;"><?php echo $_SESSION['auser']; ?></h4> -->
 					<li class="nav-item dropdown app-dropdown">
 						<a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">
 							<span class="user-img"><img class="rounded-circle" src="assets/img/profiles/avatar-01.png" width="31" alt="Ryan Taylor"></span>
@@ -51,8 +50,8 @@ if(!isset($_SESSION['auser']))
 									<img src="assets/img/profiles/avatar-01.png" alt="User Image" class="avatar-img rounded-circle">
 								</div>
 								<div class="user-text">
-									<h6><?php echo $_SESSION['auser'];?></h6>
-									<p class="text-muted mb-0">Admin</p>
+									<h6><?php echo $_SESSION['auser']; ?></h6>
+									<p class="text-muted mb-0">admin</p>
 								</div>
 							</div>
 							<a class="dropdown-item" href="profile.php">Profile</a>
@@ -65,15 +64,15 @@ if(!isset($_SESSION['auser']))
 				</ul>
 				<!-- /Header Right Menu -->
 				
-            </div>
+			</div>
 			
 			<!-- header --->
 			
 			
 			
 						<!-- Sidebar -->
-            <div class="sidebar" id="sidebar">
-                <div class="sidebar-inner slimscroll">
+			<div class="sidebar" id="sidebar">
+				<div class="sidebar-inner slimscroll">
 					<div id="sidebar-menu" class="sidebar-menu">
 						<ul>
 							<li class="menu-title justify-content-between align-items-center"> 
@@ -105,7 +104,7 @@ if(!isset($_SESSION['auser']))
 							<li class="submenu">
 								<a href="#"><i class="fe fe-user"></i> <span> All Users </span> <span class="menu-arrow"></span></a>
 								<ul style="display: none;">
-									<!-- <li><a href="venturalist.php"> ventura </a></li> -->
+									<!-- <li><a href=" adminlist.php">  admin </a></li> -->
 									<li><a href="userlist.php"> Users </a></li>
 									<li><a href="useragent.php"> Agent </a></li>
 									<li><a href="userbuilder.php"> Builder </a></li>
@@ -161,6 +160,6 @@ if(!isset($_SESSION['auser']))
 							
 						</ul>
 					</div>
-                </div>
-            </div>
+				</div>
+			</div>
 			<!-- /Sidebar -->
